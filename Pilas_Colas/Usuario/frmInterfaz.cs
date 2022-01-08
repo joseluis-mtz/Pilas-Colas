@@ -52,5 +52,41 @@ namespace Pilas_Colas.Usuario
                 btnAgregar.PerformClick();
             }
         }
+
+        private void btnAddCola_Click(object sender, EventArgs e)
+        {
+            dato = int.Parse(txtDatoCola.Text);
+            if (objCola.agregar(dato))
+            {
+                MessageBox.Show("Se agrego el dato: " + dato, "Mensaje");
+                txtDatoCola.Clear();
+                txtDatoCola.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Desbordamiento, cola llena.", "Error");
+                txtDatoCola.Clear();
+            }
+        }
+
+        private void btnRemoveCola_Click(object sender, EventArgs e)
+        {
+            if (objCola.extraer(ref dato))
+            {
+                MessageBox.Show("Dato removido: " + dato, "Mensaje");
+            }
+            else
+            {
+                MessageBox.Show("La cola esta vacía.", "Mensaje");
+            }
+        }
+
+        private void txtDatoCola_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btnAddCola.PerformClick();
+            }
+        }
     }
 }

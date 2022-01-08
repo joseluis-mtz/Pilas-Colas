@@ -72,6 +72,7 @@
             this.btnRemoveCola.TabIndex = 25;
             this.btnRemoveCola.Text = "Quitar elemento";
             this.btnRemoveCola.UseVisualStyleBackColor = true;
+            this.btnRemoveCola.Click += new System.EventHandler(this.btnRemoveCola_Click);
             // 
             // btnAddCola
             // 
@@ -81,6 +82,7 @@
             this.btnAddCola.TabIndex = 24;
             this.btnAddCola.Text = "Agregar dato";
             this.btnAddCola.UseVisualStyleBackColor = true;
+            this.btnAddCola.Click += new System.EventHandler(this.btnAddCola_Click);
             // 
             // txtDatoCola
             // 
@@ -88,6 +90,7 @@
             this.txtDatoCola.Name = "txtDatoCola";
             this.txtDatoCola.Size = new System.Drawing.Size(100, 20);
             this.txtDatoCola.TabIndex = 23;
+            this.txtDatoCola.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDatoCola_KeyPress);
             // 
             // label3
             // 
