@@ -140,6 +140,7 @@
             this.btnQuitar.TabIndex = 17;
             this.btnQuitar.Text = "Quitar elemento";
             this.btnQuitar.UseVisualStyleBackColor = true;
+            this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
             // 
             // btnAgregar
             // 
@@ -149,6 +150,7 @@
             this.btnAgregar.TabIndex = 16;
             this.btnAgregar.Text = "Agregar dato";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtDato
             // 
@@ -156,6 +158,7 @@
             this.txtDato.Name = "txtDato";
             this.txtDato.Size = new System.Drawing.Size(100, 20);
             this.txtDato.TabIndex = 15;
+            this.txtDato.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDato_KeyPress);
             // 
             // label1
             // 
@@ -188,6 +191,7 @@
             this.Name = "frmInterfaz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pilas y Colas";
+            this.Load += new System.EventHandler(this.frmInterfaz_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
