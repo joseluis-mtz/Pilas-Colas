@@ -109,6 +109,7 @@
             this.btnNuevoSize.TabIndex = 21;
             this.btnNuevoSize.Text = "Cambiar tamaño";
             this.btnNuevoSize.UseVisualStyleBackColor = true;
+            this.btnNuevoSize.Click += new System.EventHandler(this.btnNuevoSize_Click);
             // 
             // btnAplicar
             // 
@@ -118,6 +119,7 @@
             this.btnAplicar.TabIndex = 20;
             this.btnAplicar.Text = "Establecer";
             this.btnAplicar.UseVisualStyleBackColor = true;
+            this.btnAplicar.Click += new System.EventHandler(this.btnAplicar_Click);
             // 
             // txtSize
             // 

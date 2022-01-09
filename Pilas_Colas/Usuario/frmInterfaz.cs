@@ -88,5 +88,19 @@ namespace Pilas_Colas.Usuario
                 btnAddCola.PerformClick();
             }
         }
+
+        private void btnNuevoSize_Click(object sender, EventArgs e)
+        {
+            txtSize.Clear();
+            txtSize.Enabled = true;
+            txtSize.Focus();
+        }
+
+        private void btnAplicar_Click(object sender, EventArgs e)
+        {
+            txtSize.Enabled = false;
+            int sizeCola = int.Parse(txtSize.Text);
+            objCola = new Colas(sizeCola);
+        }
     }
 }
